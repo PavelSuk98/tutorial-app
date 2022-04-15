@@ -1,0 +1,11 @@
+<p>{{subtitle}}</p>
+<form [formGroup]="form">
+  <input type="text" placeholder="Zadejte titulek" formControlName="title"/>
+  <br>
+  <br>
+  <textarea type="text" placeholder="Zadejte příběh" formControlName="body"></textarea>
+  <br>
+  <br>
+  <button (click)="sendData()" [disabled]="form.invalid">Odeslat data</button>
+</form>
+
